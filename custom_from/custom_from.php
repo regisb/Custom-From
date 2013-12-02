@@ -67,8 +67,8 @@ class	custom_from extends rcube_plugin
 				(
 					isset ($headers->to) ? $IMAP->decode_address_list ($headers->to) : array (),
 					isset ($headers->cc) ? $IMAP->decode_address_list ($headers->cc) : array (),
-					isset ($headers->cci) ? $IMAP->decode_address_list ($headers->cci) : array (),
-					isset ($headers->from) ? $IMAP->decode_address_list ($headers->from) : array ()
+					isset ($headers->cci) ? $IMAP->decode_address_list ($headers->cci) : array ()
+					//isset ($headers->from) ? $IMAP->decode_address_list ($headers->from) : array ()
 				);
 
 				foreach ($targets as $target)
